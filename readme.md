@@ -22,7 +22,7 @@ console.log(arr.__proto__)
 arr.sayHi()
 ```
 
-![屏幕快照 2017-10-27 上午1.29.42](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照 2017-10-27 上午1.29.42.png)
+![屏幕快照 2017-10-27 上午1.29.42](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照%202017-10-27%20上午1.29.42.png)
 
 我们成功了为原生数组扩展了方法哈哈啊哈哈。但是不要高兴的太早，如果我们用for … in … 遍历这个数组的时候，
 
@@ -34,7 +34,7 @@ for (var x in arr) {
 
 会发生：
 
-![屏幕快照 2017-10-27 上午7.37.17](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照 2017-10-27 上午7.37.17.png)
+![屏幕快照 2017-10-27 上午7.37.17](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照%202017-10-27%20上午7.37.17.png)
 
 在Array原型上扩展的方法也会被打印出来。
 
@@ -81,4 +81,4 @@ Object.defineProperty(Array.prototype, "sayHi", {
 });
 ```
 
-![屏幕快照 2017-10-27 上午8.31.26](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照 2017-10-27 上午8.31.26.png)
+![屏幕快照 2017-10-27 上午8.31.26](https://github.com/tianhao351/javaScript_array_extension/blob/master/屏幕快照%202017-10-27%20上午8.31.26.png)
