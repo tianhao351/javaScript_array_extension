@@ -56,5 +56,29 @@ for (var x in arr) {
 2. enumerable。当使用for/in语句时，该property是否会被枚举。
 3. configurable。该property的属性是否可以修改，property是否可以删除。
 
+### 2.1 依据1做法修改
 
+使用Object.defineProperty修改方法的enumerable属性
 
+```javascript
+Array.prototype.sayHi = function(){
+    console.log("Hi")
+}
+
+Object.defineProperty(Array.prototype, "sayHi", {
+    enumerable:false,
+});
+```
+
+### 2.2 完全使用Object.defineProperty方法
+
+```javascript
+Object.defineProperty(Array.prototype, "sayHi", {
+    enumerable:false,
+    value:function(){
+        console.log("Hi")
+    }
+});
+```
+
+![屏幕快照 2017-10-27 上午8.31.26](/Users/computer/Blog/javascript_array_extension/屏幕快照 2017-10-27 上午8.31.26.png)
